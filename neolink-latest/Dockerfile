@@ -6,7 +6,7 @@ RUN apt-get update && \
     apt-get clean -y && rm -rf /var/lib/apt/lists/*
 
 # Copy data for App
-COPY run.sh /
+COPY rootfs/run.sh /run.sh
 RUN chmod a+x /run.sh
 
 CMD [ "/run.sh" ]

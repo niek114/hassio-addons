@@ -2,7 +2,7 @@
 set -e
 
 CONFIG_PATH=/data/options.json
-CONFIG_DIR=/config
+CONFIG_DIR=/homeassistant
 CONFIG_NAME=neolink.toml
 CONFIG_FILE=${CONFIG_DIR}/${CONFIG_NAME}
 

@@ -5,8 +5,10 @@ RUN apt-get update && \
         jq && \
     apt-get clean -y && rm -rf /var/lib/apt/lists/*
 
-# Copy data for App
-COPY run.sh /
+# Copy rootfs for add-on
+COPY rootfs/ /
 RUN chmod a+x /run.sh
+
+WORKDIR /config
 
 CMD [ "/run.sh" ]

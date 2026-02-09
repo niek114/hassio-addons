@@ -12,6 +12,8 @@ map:
     read_only: False
   - type: homeassistant_config
     read_only: False
+  - type: share
+    read_only: False
 options:
   mode: rtsp
   log: info
